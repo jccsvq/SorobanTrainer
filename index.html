@@ -12,7 +12,7 @@
 </script>
 
 </head>
-<body onload="drawAbacus(1,4,19,3);">
+<body onload="drawAbacus(2,5,19,3);">
   <audio id="se_soroban" preload="auto">
     <source src="./soroban/soroban.mp3" type="audio/mp3">
   </audio>
@@ -21,10 +21,10 @@
   </audio>
 
   <form>
-    <input type="radio" name="type" value="h1e4" onclick="changeType(1, 4, 3);" checked>Modern(1:4)
+    <input type="radio" name="type" value="h1e4" onclick="changeType(1, 4, 3);" >Modern(1:4)
     <input type="radio" name="type" value="h1e5" onclick="changeType(1, 5, 3);">Classic phase III (1:5)
     <input type="radio" name="type" value="h1e5" onclick="changeType(1, 5, 4);">Classic phase II (1:5)
-    <input type="radio" name="type" value="h2e5" onclick="changeType(2, 5, 4);" >Classic phase I (2:5)
+    <input type="radio" name="type" value="h2e5" onclick="changeType(2, 5, 4);" checked>Classic phase I (2:5)
     <div   style="float: right;">
       <input type="checkbox" id="soundFlag" checked="checked" onclick="soundToggle();">Sound
     </div>
@@ -49,17 +49,23 @@
      <input type="button" id="retry" value="RETRY" style="font-size:12pt;" onclick="retrySection();">
       <input type="button" name="GIVEUP" value="Show Answer" style="font-size:12pt;" onclick="showAnswer();"><br/><hr>
      <input type="button" id="prevPage" value="<< Back" style="font-size:12pt;" onclick="prevSection();">
+     <input type="button" id="lock" value="ShiftLock" style="font-size:12pt;" onclick="lockShift();">
      <input type="button" id="nextPage" value="Next >>" style="font-size:12pt;" onclick="nextSection();"><br/>
        <div style="display:inline-flex;align-items:flex-end;">
        <textarea id="instructions" rows="10" cols="80" readonly" style="font-size:12pt;">Soroban Trainer (Ver. 1.01 Type-E).
 <使い方>
 　1. [ファイルを選択]ボタンを押し、.SBKファイルを指定します。
 　2. ドロップダウンボックスから読みたい章を選択します。
+<ヒント>
+   吊珠を使用するには、2：5モードでShift +クリックを使用します。 キーボードがない場合は、上の[ShiftLock]ボタンを使用してください。
 <Usage>
 　1. Press [Choose File] button and select .sbk file.
 　2. Select Chapter from the drop down box.
+<Hint>
+  Use Shift+Click in 2:5 mode to use suspended bead. If no keyboard, use [ShiftLock] button above.
 </textarea>
-       <div>&nbsp;&nbsp;<a href="" title="Developed by Masaaki Murakami">開発</a>　村上雅章<br/>&nbsp;&nbsp;<a href="" title="In cooperation with as Prof. Masao Nakagawa (Shiga University),  Thank you so much!">協力</a>　中川雅央（滋賀大学）</div>
+       <div>&nbsp;&nbsp;<a href="" title="Developed by Masaaki Murakami">開発</a>　村上雅章<br/>&nbsp;&nbsp;<a href="" title="In cooperation with as Prof. Masao Nakagawa (Shiga University),  Thank you so much!">協力</a>　中川雅央（滋賀大学）
+  </div>
        </div>
   </form>
 </body>

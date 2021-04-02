@@ -1,20 +1,10 @@
 # SorobanTrainer
 
-そろばんトレーナー
-
-ウェブアプリ本体は以下のURLにアクセスすると動作します。
-→ https://mmurak.github.io/SorobanTrainer/index.html
-
-※ なお、上記のウェブアプリからオープン、閲覧できる文書ファイル（「.sbk」という拡張子ですが、中身は一定の形式に従った単なるテキストファイルです）は以下のURLから入手可能です。
-いったんパソコン上に保存したうえで、上記ウェブアプリからオープンしてください。
-
-古式算盤術継承計画： https://mmurak.github.io/
-
-謝辞： このウェブアプリは滋賀大学の中川雅央先生が開発された「ウェブそろばん」（ https://www.biwako.shiga-u.ac.jp/sensei/mnaka/ut/soroban.html ）をベースに機能を追加したものです。　公開許諾を頂いた中川先生にこの場を借りて感謝いたします。
-
---------------------------------------------------------------------------------
-
 Soroban/abacus training web application
+
+This is a fork of https://github.com/mmurak/SorobanTrainer just to add a soft on screen Shift-Lock button to allow use of the suspended bead (2:5 mode) on mobile devices without a keyboard.
+
+---------
 
 To run this web app, just access the link below.
 https://mmurak.github.io/SorobanTrainer/index.html

@@ -71,7 +71,17 @@ function keyup() {
     shiftkey = false;
   }
 }
-
+function lockShift() {
+//  target = document.getElementById("messageShift");
+  if (shiftkey == true) {
+    shiftkey = false;
+    document.getElementById('lock').style.backgroundColor = 'white';
+  }
+  else  {
+    shiftkey = true;
+    document.getElementById('lock').style.backgroundColor = 'lightGreen';
+  }
+}
 //
 // Bead movement
 //
