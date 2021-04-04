@@ -19,7 +19,7 @@ This is a fork of https://github.com/mmurak/SorobanTrainer just to add a soft on
 ║ │ ● ║ │ ║
 ║ │ ● ║ │ ║
 ╚═════╩═══╝
-  F 5   T   
+  F 5   T  
 ```
 
 To run this web app, just access the link below.

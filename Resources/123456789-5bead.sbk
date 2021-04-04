@@ -3,9 +3,27 @@ TYPE: 1, 5, 15, 3
 INIT:000000000000000
 Welcome!
 
-In this exercise you are asked to perform exercise 123456789 in the style of Xu Xinlu (徐心魯) in the Panzhu Suanfa (盤珠算法) (1573); that is, using the lower fifth bead.
+  In this exercise you are asked to perform exercise 123456789 in the style of Xu Xinlu (徐心魯) in the Panzhu Suanfa (盤珠算法) (1573); that is, using the lower fifth bead.
 
-It is divided into the two parts of addition and subtraction.
+  It is divided into the two parts of addition and subtraction.
+
+Rules for addition
+==================
+
+  a1) Never use the 5th bead in addition except in the two cases that follow.
+  a2)   4 + carry = F
+  a3)   9 + carry = T
+
+Rules for subtraction
+=====================
+
+  s1) Always use lower fives (F) instead of upper fives (5). 
+  s2) Never leave a cleared rod (0) if you can borrow from the adjacent left rod (but not from a farther one!), leave a T instead (i.e. 27-7 = 1T should be preferred to 27-7 = 20).
+
+  Remark: These two rules do not apply on rods where you are borrowing from, i.e. 112-7 = 10F (not TF) and 62-7 = 5F (not FF).
+
+See:
+
 
 EXIT:000000000000000
 //[Addition]
