@@ -2,7 +2,25 @@
 
 Soroban/abacus training web application
 
-This is a fork of https://github.com/mmurak/SorobanTrainer just to add a soft on screen Shift-Lock button to allow use of the suspended bead (2:5 mode) on mobile devices without a keyboard.
+This is a fork of https://github.com/mmurak/SorobanTrainer just to add a soft on screen ```[Shift-Lock]``` button to allow use of the suspended bead (2:5 mode) on mobile devices without a keyboard and also control for the 5th lower bead (codes ```F``` for *lower five* and ```T``` for *lower ten*.
+
+```
+╔═════╦═══╗
+║ ● ● ║ ● ║
+║ ● │ ║ │ ║
+║ │ │ ║ │ ║
+║ │ ● ║ ● ║
+╠═════╬═══╣
+║ ● │ ║ ● ║
+║ ● │ ║ ● ║
+║ ● ● ║ ● ║
+║ ● ● ║ ● ║
+║ ● ● ║ ● ║
+║ │ ● ║ │ ║
+║ │ ● ║ │ ║
+╚═════╩═══╝
+  F 5   T t  
+```
 
 To run this web app, just access the link below.
 https://jccsvq.github.io/SorobanTrainer/index.html
