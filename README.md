@@ -4,10 +4,14 @@ Soroban/abacus training web application
 
 This is a fork of https://github.com/mmurak/SorobanTrainer just to add a soft on screen Shift-Lock button to allow use of the suspended bead (2:5 mode) on mobile devices without a keyboard.
 
----------
-
 To run this web app, just access the link below.
-https://mmurak.github.io/SorobanTrainer/index.html
+https://jccsvq.github.io/SorobanTrainer/index.html
+
+
+***
+
+
+The following is from mmurak's original README
 
 If you're learning division method by Kijoho, you could try these daunting exercise file.  ;-)
 (Just download exercise file from https://mmurak.github.io/SorobanTrainer/Resources/kijoho100.sbk and open with the web app.
