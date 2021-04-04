@@ -3,6 +3,7 @@
 //
 // keydown() : Internal function for Suspended-Beads and Next>> function
 // keyup() : ditto
+// lockShift() : Internal function for on-screen Shift-Lock button 
 // mv(name) : Bead move.  name::/(hb|eb)(\d\d)(\d\d\d)/
 // putimg(obj, filename) : Internal function
 // resetsoroban() : Reset
@@ -72,7 +73,7 @@ function keyup() {
   }
 }
 function lockShift() {
-//  target = document.getElementById("messageShift");
+//  Added by jccsvq
   if (shiftkey == true) {
     shiftkey = false;
     document.getElementById('lock').style.backgroundColor = 'white';
@@ -454,6 +455,14 @@ function interpret(num) {
         hvn = hvn + 'V';
         erth = erth + '4';
         break;
+      case 'F' :
+        hvn = hvn + 'u';
+        erth = erth + '5';
+        break;
+      case 'T' :
+        hvn = hvn + 'V';
+        erth = erth + '5';
+        break;
       default :
     }
   }
@@ -475,7 +484,7 @@ function processFile(data) {
       drawAbacus(ans[1], ans[2], ans[3], ans[4]);
       return;
     }
-    if (ans = line.match(/^ *INIT:([ 0-9]+)$/i)) {
+    if (ans = line.match(/^ *INIT:([ 0-9FT]+)$/i)) {
       initialPatternBuffer.push(interpret(temp = ans[1]));
       if (text != '') {
         tutorialBuffer.push(text);
@@ -483,7 +492,7 @@ function processFile(data) {
       }
       return;
     }
-    if (ans = line.match(/^ *EXIT:([ 0-9]+)$/i)) {
+    if (ans = line.match(/^ *EXIT:([ 0-9FT]+)$/i)) {
       exitPatternBuffer.push(interpret(ans[1]));
       return;
     }
