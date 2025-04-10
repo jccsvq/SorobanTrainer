@@ -19,7 +19,9 @@
 <title>Soroban Viewer</title>
 <script language="JavaScript" src="./soroban/soropanel.js"> 
 </script>
-
+<style>
+body {background-color: DarkCyan;}
+</style>
 </head>
 <body onload="drawAbacus(2,5,19,3);">
   <audio id="se_soroban" preload="auto">
@@ -62,6 +64,11 @@
      <input type="button" id="nextPage" value="Next >>" style="font-size:12pt;" onclick="nextSection();"><br/>
        <div style="display:inline-flex;align-items:flex-end;">
        <textarea id="instructions" rows="10" cols="80" readonly" style="font-size:12pt;">Soroban Trainer (Ver. 1.01 Type-E).
+<Uso>
+1. Presione el botón [Elegir archivo] y seleccione el archivo .sbk.
+2. Seleccione Capítulo en el cuadro desplegable.
+<Pista>
+Utilice Shift+Clic en el modo 5+2 para utilizar cuentas suspendidas. Si no tiene teclado, utilice el botón [ShiftLock] arriba.
 <使い方>
 　1. [ファイルを選択]ボタンを押し、.SBKファイルを指定します。
 　2. ドロップダウンボックスから読みたい章を選択します。
